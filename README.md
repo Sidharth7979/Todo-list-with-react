@@ -1,7 +1,9 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Used MUI in maximum cases
+
+# Used MUI in maximum cases in this project.
+
 ## Available Scripts
 
 In the project directory, you can run:
