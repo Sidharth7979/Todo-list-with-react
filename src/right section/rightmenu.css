@@ -1,0 +1,16 @@
+.task-options-container {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 320px;
+    z-index: ;
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 480px) {
+    .task-options-container {
+      width: 100%;
+      right: 0;
+    }
+  }
+  

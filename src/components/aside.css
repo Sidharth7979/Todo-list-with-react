@@ -1,0 +1,116 @@
+
+.profile {
+  margin-left: 77px;
+  margin-top: -70px;
+  width: 118px;
+  height: 118px;
+  background-color: rgb(251, 253, 252);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-image: url('../images/unnamed\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #333;
+}
+
+.frame1 {
+  position: absolute;
+  top: 200px;
+  width: 280px;
+  height:870px;
+  background-color: rgb(238, 246, 239);
+  padding: 24px 0px;
+}
+
+/* Light mode styles */
+.sidebar1 {
+  width: 240px;
+  height: 248px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.aside li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.aside li img {
+  width: 24px;
+  height: 24px; 
+  margin-right: 10px; 
+}
+
+.sidebar1 li:hover {
+  color: green; 
+}
+
+.sidebar1 li:hover img {
+  filter: invert(50%) sepia(100%) saturate(5000%) hue-rotate(70deg) brightness(100%) contrast(100%);
+}
+
+.aside li:hover {
+  background-color: #e0e0e0;
+}
+
+.frame2 {
+  height: 88px;
+  width: 205px;
+  padding: 8px 16px;
+  border: 2px solid white;
+  background-color: #fff;
+}
+
+.sidepanel {
+  width: 241px;
+  height: 200.13px;
+  margin-top: 20px;
+}
+
+/* Dark mode styles */
+.dark-mode .profile {
+  background-color: #333; /* Dark mode background color */
+}
+
+.dark-mode .name {
+  color: #ccc; /* Dark mode text color */
+}
+
+.dark-mode .frame1 {
+  background-color: #2d2d2d; /* Dark mode background color */
+}
+
+.dark-mode .sidebar1 {
+  background-color: #444; /* Dark mode background color */
+}
+
+.dark-mode .aside li {
+  background-color: #555; /* Dark mode item background color */
+  color: #ddd; /* Dark mode item text color */
+}
+
+.dark-mode .aside li:hover {
+  background-color: #666; /* Dark mode item hover background color */
+}
+
+.dark-mode .frame2 {
+  background-color: #444; /* Dark mode background color */
+  border-color: #666; /* Dark mode border color */
+}

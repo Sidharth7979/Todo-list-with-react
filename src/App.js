@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Home from './components/todo-home';
+import './App.css'; // Ensure this CSS file has styles for .app and .dark-mode
 
-function App() {
+export default function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(prevState => !prevState);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={isDarkMode ? 'app dark-mode' : 'app'}>
+      <Home isDarkMode={isDarkMode} onToggleDarkMode={toggleDarkMode} />
     </div>
   );
 }
-
-export default App;

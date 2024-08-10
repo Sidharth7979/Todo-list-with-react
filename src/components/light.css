@@ -1,0 +1,56 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and icons */
+  padding: 10px;
+  width: 1315px;
+  background-color: #fff; /* Light mode background color */
+}
+
+/* Logo */
+.nav-logo {
+  height: 40px;
+  margin-left: 15px;
+}
+
+/* Icons */
+.nav-icon,
+.nav-search,
+.nav-appgrid,
+.nav-moon {
+  margin-left: 15px;
+}
+
+/* Dark mode styles */
+.dark-mode .nav-container {
+  background-color: #333; /* Dark mode background color */
+}
+
+.dark-mode .nav-icon,
+.dark-mode .nav-logo,
+.dark-mode .nav-search,
+.dark-mode .nav-appgrid,
+.dark-mode .nav-moon {
+  color: #fff; /* Set icons and logo to white in dark mode */
+}
+
+/* Responsive styles */
+
+/* Consistent style for all screen sizes */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-logo {
+    height: 35px; /* Slightly reduce logo size for smaller screens */
+    margin-left: 10px;
+  }
+
+  .nav-icon,
+  .nav-search,
+  .nav-appgrid,
+  .nav-moon {
+    margin-left: 10px; /* Reduce margins for icons on smaller screens */
+  }
+}
